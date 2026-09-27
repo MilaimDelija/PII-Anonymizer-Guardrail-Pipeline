@@ -151,7 +151,7 @@ def anonymisiere(
     erkennungen = [
         Erkennung(
             entitaetstyp=treffer_einzeln.entity_type,
-            erkannter_text=text[treffer_einzeln.start : treffer_einzeln.ende],
+            erkannter_text=text[treffer_einzeln.start : treffer_einzeln.end],
             start=treffer_einzeln.start,
             ende=treffer_einzeln.end,
             score=round(treffer_einzeln.score, 2),
